@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Akash Singh Bhardwaj</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .projects-section {
+      padding: 8rem 4rem 4rem;
+      background-color: #1f242d;
+      color: white;
+      min-height: 100vh;
+    }
+
+    .projects-section h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: darkcyan;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background-color: #2a2f3a;
+      border: 1px solid #333;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      border-color: darkcyan;
+    }
+
+    .project-card h3 {
+      color: darkcyan;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-bottom: 1rem;
+    }
+
+    .project-card a {
+      padding: 0.5rem 1rem;
+      background: darkcyan;
+      border-radius: 1rem;
+      color: #1f242d;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .project-card a:hover {
+      background: #00b6b6;
+    }
+
+    @media (max-width: 600px) {
+      .projects-section {
+        padding: 6rem 1.5rem 2rem;
+      }
+
+      .projects-section h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">Portfolio</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li class="active"><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="projects-section">
+    <h1>My Projects</h1>
+    <div class="project-grid">
+      <div class="project-card"><h3>Weather App</h3><p>Displays real-time weather info using OpenWeather API.</p><a href="#">View Project</a></div>
+      <div class="project-card"><h3>AI Image Generator</h3><p>Generate images from text using Replicate API and frontend magic.</p><a href="#">View Project</a></div>
+      <div class="project-card"><h3>Task Tracker</h3><p>A full-stack MERN application for task management with auth.</p><a href="#">View Project</a></div>
+      <div class="project-card"><h3>House Price Predictor</h3><p>ML model to predict housing prices based on various features.</p><a href="#">View Project</a></div>
+      <div class="project-card"><h3>Sales Dashboard</h3><p>Power BI dashboard visualizing sales, profit, and category trends.</p><a href="#">View Project</a></div>
+    </div>
+  </section>
+
+</body>
+</html>

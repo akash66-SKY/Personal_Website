@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills - Akash Singh Bhardwaj</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .skills-section {
+      padding: 8rem 4rem 4rem;
+      background-color: #1f242d;
+      color: white;
+      min-height: 100vh;
+    }
+
+    .skills-section h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: darkcyan;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-card {
+      background-color: #2a2f3a;
+      border: 1px solid #333;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-10px);
+      border-color: darkcyan;
+    }
+
+    .skill-card h3 {
+      color: darkcyan;
+      margin-bottom: 0.8rem;
+    }
+
+    .skill-card p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      .skills-section {
+        padding: 6rem 1.5rem 2rem;
+      }
+
+      .skill-card {
+        padding: 1.5rem;
+      }
+
+      .skills-section h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">Portfolio</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="active"><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="skills-section">
+    <h1>My Skills</h1>
+    <div class="skills-grid">
+      <div class="skill-card"><h3>HTML</h3><p>Markup language used to structure and present content on the web.</p></div>
+      <div class="skill-card"><h3>CSS</h3><p>Used to style and make websites visually appealing and responsive.</p></div>
+      <div class="skill-card"><h3>JavaScript</h3><p>Enables interactivity and dynamic behavior in websites and web apps.</p></div>
+      <div class="skill-card"><h3>Java</h3><p>Powerful language for scripting, automation, and backend development.</p></div>
+      <div class="skill-card"><h3>Express.js</h3><p>Component-based JS library for building interactive user interfaces.</p></div>
+      <div class="skill-card"><h3>Node.js</h3><p>JavaScript runtime for building scalable server-side applications.</p></div>
+      <div class="skill-card"><h3>SQL</h3><p>Document-oriented SQL database for modern web applications.</p></div>
+      <div class="skill-card"><h3>Python</h3><p>Powerful language for scripting, automation, and backend development.</p></div>
+      <div class="skill-card"><h3>Django</h3><p>Powerful language for scripting, automation, and backend development.</p></div>
+      <div class="skill-card"><h3>Data Analytics</h3><p>Power BI, Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn.</p></div>
+      <div class="skill-card"><h3>Artifical Intelligence</h3><p>Powerful language for scripting, automation, and backend development.</p></div>
+      <div class="skill-card"><h3>Machine Learning</h3><p>Enables systems to learn from data and make intelligent predictions.</p></div>
+    </div>
+  </section>
+
+</body>
+</html>
